@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const hashtagSchema = mongoose.Schema({
     name: String,
     nombre: Number,
-    id: []
+    id: [{ type: mongoose.Schema.Types.ObjectId, ref: 'tweets' },]
 
 });
 
